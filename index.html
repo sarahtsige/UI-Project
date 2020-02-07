@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
-    <title>UI Design</title>
-  </head>
-  <body>
-<header>Game of Thrones Houses</header>
-<nav>
-  <div class='houses'>House Stark</div>  
-  <div class='houses'>House Lannister</divclass='houses>
-  <div class='houses'>House Targaryen</div>
-  <div class='houses'>House Barathean</div>
-  <div class='houses'>House Tyrel</div>
-</nav>
-  <main> 
-    <h1> TITLE  - API NAME</h1>
-  </main> 
-    <script src="./js/script.js"></script>
 
-   
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css">
+  <title>UI Design</title>
+</head>
+
+<body>
+  <header>Game of Thrones Houses</header>
+
+
+  <main>
+    <ul>
+      <li data-tab-target='#stark'>Stark</li>
+      <li data-tab-target='#lannister'>Lannister</li>
+      <li data-tab-target='#targaryen'>Targaryen</li>
+      <li data-tab-target='#barathean'>Barathean</li>
+      <li data-tab-target='#tyrel'>Tyrel</li>
+    </ul>
+
+
+    <div class='houses'data-tab-content>
+      <div>IMG</div>
+      <div>
+      <h2>Name:</h2>
+      <p>Region:</p>
+      <p>Coat of Arms:</p>
+      <p>Words:</p>
+      <p>Titles:</p>
+    </div>
+    </div>
+    <div class='houses' data-tab-content></div>
+    <div class='houses' data-tab-content></div>
+    <div class='houses' data-tab-content></div>
+    <div class='houses' data-tab-content></div>
+  </main>
+  <script src="script.js" defer></script>
+
+
+</body>
+
 </html>
