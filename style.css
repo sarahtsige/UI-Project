@@ -1,5 +1,5 @@
 header {
-    font-size: 45px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -14,15 +14,15 @@ li {
 
 body {
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
     background: black;
     color: white;
+    font-family: 'Cinzel', serif;
 
 }
 
 main {
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cinzel', serif;
     background: black;
     color: white;
     margin-top: 40px;
@@ -35,13 +35,28 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 30px 0;
+    font-family: 'Cinzel', serif;
 } 
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
 
 .houses {
     display: inline;
     padding: 30px;
     font-size: 30px;
     background: black;
+}
+
+.houseimage {
+    width: 500px;
+    background-size: cover;
+    background-position: center;
 }
 
 
