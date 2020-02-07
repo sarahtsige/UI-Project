@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css">
-  
-  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">  
+
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 
   <title>UI Design</title>
 </head>
@@ -17,74 +17,75 @@
 
 
   <main>
-    <ul>
-      <li data-tab-target='#stark'>Stark</li>
-      <li data-tab-target='#targaryen'>Targaryen</li>
-      <li data-tab-target='#lannister'>Lannister</li>
-      <li data-tab-target='#baratheon'>Baratheon</li>
-      <li data-tab-target='#tyrel'>Tyrel</li>
+    <ul class='tabs'>
+      <li data-tab-target='#stark' class='tab'>Stark</li>
+      <li data-tab-target='#targaryen' class='tab'>Targaryen</li>
+      <li data-tab-target='#lannister' class='tab'>Lannister</li>
+      <li data-tab-target='#baratheon' class='tab'>Baratheon</li>
+      <li data-tab-target='#tyrel' class='tab'>Tyrel</li>
     </ul>
 
-
-    <div class='houses'data-tab-content>
-      <div class='houseimage'><img src="./stark.jpg"></div>
-      <div>
-      <h2>Name:</h2>
-      <p>Region:</p>
-      <p>Coat of Arms:</p>
-      <p>Words:</p>
-      <p>Titles:</p>
-    </div>
-    </div>
-
-
-
-    <div class='houses' data-tab-content>
-      <div class='houseimage'><img src="./targaryen.jpg"></div>
-      <div>
-      <h2>Name:</h2>
-      <p>Region:</p>
-      <p>Coat of Arms:</p>
-      <p>Words:</p>
-      <p>Titles:</p>
-    </div>
-
-
-    <div class='houses' data-tab-content>
-      <div class='houseimage'><img src="./lannister.jpg"></divclass='houseimage'>
-      <div>
-      <h2>Name:</h2>
-      <p>Region:</p>
-      <p>Coat of Arms:</p>
-      <p>Words:</p>
-      <p>Titles:</p>
-    </div>
+    <div class='master'>
+      <div class='houses' data-tab-content class="active">
+        <div class='houseimage'><img src="./stark.jpg"></div>
+        <div>
+          <h2>Name:</h2>
+          <p>Region:</p>
+          <p>Coat of Arms:</p>
+          <p>Words:</p>
+          <p>Titles:</p>
+        </div>
+      </div>
 
 
 
-    <div class='houses' data-tab-content>
-      <div class='houseimage'><img src="./baratheon.jpg"></div>
-      <div>
-      <h2>Name:</h2>
-      <p>Region:</p>
-      <p>Coat of Arms:</p>
-      <p>Words:</p>
-      <p>Titles:</p>
-    </div>
+      <div class='houses' data-tab-content>
+        <div class='houseimage'><img src="./targaryen.jpg"></div>
+        <div>
+          <h2>Name:</h2>
+          <p>Region:</p>
+          <p>Coat of Arms:</p>
+          <p>Words:</p>
+          <p>Titles:</p>
+        </div>
 
 
-    <div class='houses' data-tab-content>
-      <div class='houseimage'><img src="./tyrel.jpg"></div>
-      <div>
-      <h2>Name:</h2>
-      <p>Region:</p>
-      <p>Coat of Arms:</p>
-      <p>Words:</p>
-      <p>Titles:</p>
-    </div>
+        <div class='houses' data-tab-content>
+          <div class='houseimage'><img src="./lannister.jpg"></divclass='houseimage'>
+            <div>
+              <h2>Name:</h2>
+              <p>Region:</p>
+              <p>Coat of Arms:</p>
+              <p>Words:</p>
+              <p>Titles:</p>
+            </div>
+
+
+
+            <div class='houses' data-tab-content>
+              <div class='houseimage'><img src="./baratheon.jpg"></div>
+              <div>
+                <h2>Name:</h2>
+                <p>Region:</p>
+                <p>Coat of Arms:</p>
+                <p>Words:</p>
+                <p>Titles:</p>
+              </div>
+
+
+              <div class='houses' data-tab-content>
+                <div class='houseimage'><img src="./tyrel.jpg"></div>
+                <div>
+                  <h2>Name:</h2>
+                  <p>Region:</p>
+                  <p>Coat of Arms:</p>
+                  <p>Words:</p>
+                  <p>Titles:</p>
+                </div>
   </main>
   <script src="script.js" defer></script>
 
+  </div>
 
 </body>
 
