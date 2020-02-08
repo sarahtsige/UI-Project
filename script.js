@@ -33,6 +33,12 @@ housesNumbers2 = [362, 378, 229, 15, 398]
 
 //add event listener for stark tab
 
+
+
+
+
+
+
 starkTab.addEventListener('click', function () {
   //test event listener with message to console
   console.log('stark el worked!')
@@ -43,35 +49,29 @@ starkTab.addEventListener('click', function () {
   // fetch(houseUrl).then(res => {
   //   return res.json();
   })
+
   //capture house name
-  // fetch("https://anapioficeandfire.com/api/houses/362")
-  // .then(res => res.json())
-  // .then (data => console.log(data.name))
   fetch("https://anapioficeandfire.com/api/houses/362")
   .then(res => res.json())
-  .then (data => document.querySelector('.name').innerHTML = "Name:    "+data.name);
-
+  .then(data => document.querySelector('.name').innerHTML = "Name:  "+data.name);
+   // (data => document.querySelector('.region').innerHTML = "Region:  "+data.region);
  // })
 //})
 
 
 
 
-targTab.addEventListener('click', function () {
-  console.log('targ el worked!')
-})
+function onTabClick (event) {
+  let activeTabs = document.querySelectorAll(".active");
+    //deactivate existing active tab
+  for (let i = 0; i < activeTabs.length; i++) {
+    activeTabs[i].className = activeTabs[i].className.replace('active', '');
+//activate new tab
+event.target.parentElement.className +=' active';
+}
+}
 
-lanTab.addEventListener('click', function () {
-  console.log('lan el worked!')
-})
-
-barTab.addEventListener('click', function () {
-  console.log('bar el worked!')
-})
-
-tyrelTab.addEventListener('click', function () {
-  console.log('tyrel el worked!')
-})
+tabs.addEventListener('click', onTabClick, false); 
 
 
 
@@ -80,51 +80,39 @@ tyrelTab.addEventListener('click', function () {
 
 
 
+//ALL EVENT LISTENERS******************
+// targTab.addEventListener('click', function () {
+//  console.log('targ el worked!')
 
 
-
-
-
-
-
-// for (let i = 0; i <housesNumbers2.length; i++) {
-// fetch(baseUrl+housesNumbers2[0])
-//   .then(res => {
-//     return res.json();
-//   })
-//   .then(res => {
-//     console.log("success   res");
-//     console.log(res);
-//   })
-//   .catch(err => {
-//     console.log("something went wrong...", err);
-//   });
-//   //houses.innerHTML = res[0].name;
-// }
-
-
-
-
-//
-
-
-
-// function getHouseInfo(e) {
-//   e.preventDefaut();
-//   const target = document.querySelector(tab.dataset.tabTarget)
-//   target.classList.add('active')
-// }
-
-//Event listener to tabs for the click
-// tabs.forEach(tab => {
-//   tab.addEventListener('click', myFunction() => {
-//     const target = document.querySelector(tab.dataset.tabTarget)
-//     tabContents.forEach(tabContent => {
-//       tabContent.classList.remove('active')
-//     })
-//     target.classList.add('active')
-//   })
+// lanTab.addEventListener('click', function () {
+//   console.log('lan el worked!')
 // })
+
+// barTab.addEventListener('click', function () {
+//   console.log('bar el worked!')
+// })
+
+// tyrelTab.addEventListener('click', function () {
+//   console.log('tyrel el worked!')
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
