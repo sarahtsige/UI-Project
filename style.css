@@ -30,6 +30,10 @@ main {
     width: auto;
 }
 
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
 
 
 h2 {
@@ -46,29 +50,47 @@ p {
 }
 
 [data-tab-content] {
-    display: none;
+    /* display: none; */
 }
 
 .active[data-tab-content] {
     display: block;
 }
 
-.master {
-    margin-top: -75px;
+.houses-container {
+    margin-top: -35px;
+}
+
+.landing {
+margin:;
 }
 
 
-.houses {
-    display: inline;
+.house {
     padding: 30px;
     font-size: 30px;
     background: black;
 }
 
 .houseimage {
-    width: 500px;
+    width: 80%;
     background-size: cover;
     background-position: center;
+    display: block;
+    height: 1000px;
+    margin: auto;
+}
+
+.house__image {
+    display: inline-block;
+    width: 75%;
+    height: 1000px;
+}
+
+.house__info {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
 }
 
 .tabs {
@@ -78,5 +100,13 @@ p {
     padding: 20px;
     background-color: grey;
     list-style-type: none;
+}
+
+.starkimgdiv {
+    width: 60%;
+    height: 60%;
+    background-image: url(./stark.jpg);
+    background-size: cover;
+    background-position: center; 
 }
 

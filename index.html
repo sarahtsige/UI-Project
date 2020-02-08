@@ -18,70 +18,84 @@
 
   <main>
     <ul class='tabs'>
-      <li data-tab-target='#stark' class='tab'>Stark</li>
-      <li data-tab-target='#targaryen' class='tab'>Targaryen</li>
-      <li data-tab-target='#lannister' class='tab'>Lannister</li>
-      <li data-tab-target='#baratheon' class='tab'>Baratheon</li>
-      <li data-tab-target='#tyrel' class='tab'>Tyrel</li>
+      <!-- <li data-tab-target='#got' id=got class='tab'>Game of Thrones</li> -->
+      <li data-tab-target='#stark' id='stark' class='tab'>Stark</li>
+      <li data-tab-target='#targaryen' id='targaryen' class='tab'>Targaryen</li>
+      <li data-tab-target='#lannister' id='lannister' class='tab'>Lannister</li>
+      <li data-tab-target='#baratheon' id='baratheon' class='tab'>Baratheon</li>
+      <li data-tab-target='#tyrel' id='tyrel' class='tab'>Tyrel</li>
     </ul>
 
-    <div class='master'>
-      <div class='houses' data-tab-content class="active">
-        <div class='houseimage'><img src="./stark.jpg"></div>
+    <div class='houses-container'>
+
+
+      <div class='landing' data-tab-content class="active">
+        <div class='houseimage' style="background-image: url(./got.jpg); background-position: center;"></div>
         <div>
-          <h2>Name:</h2>
-          <p>Region:</p>
-          <p>Coat of Arms:</p>
-          <p>Words:</p>
-          <p>Titles:</p>
+          <h1>"When you play the game of thrones, you win or you die....."</h2>
+
         </div>
       </div>
 
+      <div class='house' data-tab-content>
+        <div class='house__info'>
+          <h2 class="name">Name:</h2>
+          <p>Region:</p>
+          <p>Coat of Arms:</p>
+          <p>Words:</p>
+          <p>Titles:</p>
+        </div>
+        <div class='house__image' style="background-image: url(./stark.jpg); background-position: center;"></div>'>
+        </div>
 
 
-      <div class='houses' data-tab-content>
-        <div class='houseimage'><img src="./targaryen.jpg"></div>
-        <div>
+      <div class='house' data-tab-content>
+        <div class='house__info'>
           <h2>Name:</h2>
           <p>Region:</p>
           <p>Coat of Arms:</p>
           <p>Words:</p>
           <p>Titles:</p>
         </div>
+        <div class='house__image' style="background-image: url(./targaryen.jpg); background-position: center;"></div>
+      </div>
 
+      <div class='house' data-tab-content>
+        <div class='house__info'>
+          <h2>Name:</h2>
+          <p>Region:</p>
+          <p>Coat of Arms:</p>
+          <p>Words:</p>
+          <p>Titles:</p>
+        </div>
+        <div class='house__image' style="background-image: url(./lannister.jpg); background-position: center;"></div>
+      </div>
 
-        <div class='houses' data-tab-content>
-          <div class='houseimage'><img src="./lannister.jpg"></divclass='houseimage'>
-            <div>
-              <h2>Name:</h2>
-              <p>Region:</p>
-              <p>Coat of Arms:</p>
-              <p>Words:</p>
-              <p>Titles:</p>
-            </div>
+      <div class='house' data-tab-content>
+        <div class='house__info'>
+          <h2>Name:</h2>
+          <p>Region:</p>
+          <p>Coat of Arms:</p>
+          <p>Words:</p>
+          <p>Titles:</p>
+        </div>
+        <div class='house__image' style="background-image: url(./baratheon.jpg); background-position: center;"></div>
+      </div>
 
+      <div class='house' data-tab-content>
+        <div class='house__info'>
+          <h2>Name:</h2>
+          <p>Region:</p>
+          <p>Coat of Arms:</p>
+          <p>Words:</p>
+          <p>Titles:</p>
+        </div>
+        <div class='house__image' style="background-image: url(./tyrel.jpg); background-position: center;">
+          <!-- <img src="./tyrel.jpg"> -->
+        </div>
+      </div>
 
-
-            <div class='houses' data-tab-content>
-              <div class='houseimage'><img src="./baratheon.jpg"></div>
-              <div>
-                <h2>Name:</h2>
-                <p>Region:</p>
-                <p>Coat of Arms:</p>
-                <p>Words:</p>
-                <p>Titles:</p>
-              </div>
-
-
-              <div class='houses' data-tab-content>
-                <div class='houseimage'><img src="./tyrel.jpg"></div>
-                <div>
-                  <h2>Name:</h2>
-                  <p>Region:</p>
-                  <p>Coat of Arms:</p>
-                  <p>Words:</p>
-                  <p>Titles:</p>
-                </div>
+    </div>
   </main>
   <script src="script.js" defer></script>
 
