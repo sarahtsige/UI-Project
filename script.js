@@ -7,7 +7,7 @@ function onTabClick(event) {
   let oldActiveTab = document.querySelector('.active');
   //remove old active class
   oldActiveTab.classList.toggle('active');
-  //add active class to selecte tab
+  //add active class to selected tab
   activeTab.classList.toggle('active');
   getHouseInfo(id);
 }
@@ -27,7 +27,9 @@ function populateData (data) {
 function getHouseInfo(houseNo) {
   //capture house name
   return fetch(`https://anapioficeandfire.com/api/houses/${houseNo}`)
+  //convert data to JSON
     .then(res => res.json())
+  //push data to function populateData
     .then(data => populateData(data))
 }
 
