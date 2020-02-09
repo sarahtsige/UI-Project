@@ -23,17 +23,6 @@ let housesNumbers = {
 
 housesNumbers2 = [362, 378, 229, 15, 398]
 
-starkTab.addEventListener('click', function () {
-  //test event listener with message to console
-  console.log('stark el worked!')
-  //generate url for each house
-  let houseUrl = baseUrl + housesNumbers2[0];
-  console.log(houseUrl);
-  //use generated url to get house info
-  // fetch(houseUrl).then(res => {
-  //   return res.json();
-})
-
 //capture house name
 fetch("https://anapioficeandfire.com/api/houses/362")
   .then(res => res.json())
@@ -46,7 +35,8 @@ fetch("https://anapioficeandfire.com/api/houses/362")
 
 
 function onTabClick(event) {
-  let activeTab = event.target.id;
+  let target = event.target.getAttribute("data-tab-target");
+  let activeTab = document.querySelector(target);
   let oldActiveTab = document.querySelector('.active');
   //remove old active class
   oldActiveTab.classList.toggle('active');

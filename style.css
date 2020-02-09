@@ -62,14 +62,20 @@ p {
 }
 
 .landing {
-margin:;
+    margin: 0;
+    display: none;
 }
 
+.active {
+    display: inline-block;
+}
 
 .house {
     padding: 30px;
     font-size: 30px;
     background: black;
+    padding: 0;
+    display: none;
 }
 
 .houseimage {
