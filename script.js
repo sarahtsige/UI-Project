@@ -27,9 +27,23 @@ housesNumbers2 = [362, 378, 229, 15, 398]
 fetch("https://anapioficeandfire.com/api/houses/362")
   .then(res => res.json())
   .then(data => document.querySelector('.name').innerHTML = "Name:  " + data.name);
-// (data => document.querySelector('.region').innerHTML = "Region:  "+data.region);
+//(data => document.querySelector('.region').innerHTML = "Region:  "+data.region);
 // })
 //})
+
+//get house region
+fetch("https://anapioficeandfire.com/api/houses/362")
+  .then(res => res.json())
+  .then(data => document.querySelector('.region').innerHTML = "Region:  " + data.region);
+
+  //get get coat of arms
+fetch("https://anapioficeandfire.com/api/houses/362")
+  .then(res => res.json())
+  .then(data => document.querySelector('.coat').innerHTML = "Coat of Arms:  " + data.coatOfArms);
+
+
+
+
 
 
 
