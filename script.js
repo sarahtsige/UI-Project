@@ -20,7 +20,7 @@ function init() {
 function populateData (data) {
     let activeTab = document.querySelector('.active');
     //update inner HTML when tab is clicked
-    activeTab.querySelector('.name').innerHTML = `${activeTab.querySelector('.name').innerHTML} ${data.name}`;
+    activeTab.querySelector('.name').innerHTML = "Name:  " + data.name;
     activeTab.querySelector('.region').innerHTML = "Region:  " + data.region;
     activeTab.querySelector('.coatOfArms').innerHTML = "Coat of Arms:  " + data.coatOfArms;
     if (activeTab.querySelector('.words').innerHTML == ""){
