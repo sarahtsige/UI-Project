@@ -19,7 +19,7 @@ function init() {
 
 function populateData (data) {
     let activeTab = document.querySelector('.active');
-    //update inner HTML when tab is clicked
+    //update inner HTML for each house when tab is clicked
     activeTab.querySelector('.name').innerHTML = "Name:  " + data.name;
     activeTab.querySelector('.region').innerHTML = "Region:  " + data.region;
     activeTab.querySelector('.coatOfArms').innerHTML = "Coat of Arms:  " + data.coatOfArms;
@@ -29,7 +29,7 @@ function populateData (data) {
 }
 
 function getHouseInfo(houseNo) {
-  //capture house name
+  //capture house info
   return fetch(`https://anapioficeandfire.com/api/houses/${houseNo}`)
   //convert data to JSON
     .then(res => res.json())
