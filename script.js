@@ -19,10 +19,12 @@ function init() {
 
 function populateData (data) {
     let activeTab = document.querySelector('.active');
+    //update inner HTML when tab is clicked
     activeTab.querySelector('.name').innerHTML = "Name:  " + data.name;
     activeTab.querySelector('.region').innerHTML = "Region:  " + data.region;
     activeTab.querySelector('.coatOfArms').innerHTML = "Coat of Arms:  " + data.coatOfArms;
-    activeTab.querySelector('.words').innerHTML = "Words: " + data.words;
+    if (activeTab.querySelector('.words').innerHTML == ""){
+      activeTab.querySelector('.words').innerHTML = "Words: " + data.words;
 }
 
 function getHouseInfo(houseNo) {
