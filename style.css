@@ -116,3 +116,32 @@ p {
     background-position: center; 
 }
 
+
+@media screen and (max-width: 480px) {
+
+    header {
+        font-size: 35px;
+    }
+
+    .tabs {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .house__image {
+        display: inline-block;
+        width: 75%;
+        height: 500px;
+    }
+    
+
+}
+
+
