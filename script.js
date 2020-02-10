@@ -22,6 +22,7 @@ function populateData (data) {
     activeTab.querySelector('.name').innerHTML = "Name:  " + data.name;
     activeTab.querySelector('.region').innerHTML = "Region:  " + data.region;
     activeTab.querySelector('.coatOfArms').innerHTML = "Coat of Arms:  " + data.coatOfArms;
+    activeTab.querySelector('.words').innerHTML = "Words: " + data.words;
 }
 
 function getHouseInfo(houseNo) {
