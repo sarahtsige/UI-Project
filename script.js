@@ -13,16 +13,22 @@ function onTabClick(event) {
 }
 
 function init() {
+
+  //selet tabs
   let tabs = document.querySelectorAll('.tab');
+  //add event listener for each tab
   tabs.forEach(element => element.addEventListener('click', onTabClick));
 }
 
 function populateData (data) {
+  //select active tab
     let activeTab = document.querySelector('.active');
-    //update inner HTML for each house when tab is clicked
+    //update inner HTML for active tab when clicked
     activeTab.querySelector('.name').innerHTML = "Name:  " + data.name;
     activeTab.querySelector('.region').innerHTML = "Region:  " + data.region;
     activeTab.querySelector('.coatOfArms').innerHTML = "Coat of Arms:  " + data.coatOfArms;
+    //conditional statement to populate words only when there is no content in HTML
+    //API did not have words for House Baratheon
     if (activeTab.querySelector('.words').innerHTML == ""){
       activeTab.querySelector('.words').innerHTML = "Words: " + data.words;
     }
